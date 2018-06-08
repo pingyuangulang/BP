@@ -12,6 +12,7 @@ public class MatrixException extends Exception{
      *异常信息
      */
     private String message;
+    
     /**
      * 无参构造器
      */
