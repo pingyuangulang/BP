@@ -2,13 +2,18 @@ package com.Matrix;
 
 import com.Exceptions.MatrixException;
 
+/**
+ * 封装有关矩阵运算的操作工具类。
+ * @author JiBin
+ * @date 2018/6/9 1:32
+ */
 public class Matrix {
     
     /**
-     * 两个二维矩阵相乘
-     * @param matrix1:第一个二维矩阵
-     * @param matrix2:第二个二维矩阵
-     * @return 两个二维矩阵相乘的结果
+     * 两个二维矩阵相乘。
+     * @param matrix1 第一个二维矩阵。
+     * @param matrix2 第二个二维矩阵。
+     * @return 两个二维矩阵相乘的结果。
      * @throws MatrixException
      */
     public static double[][] matrixMultiple(double[][] matrix1, double[][] matrix2) throws MatrixException {
@@ -33,10 +38,10 @@ public class Matrix {
     }
     
     /**
-     * 二维矩阵与数相乘
-     * @param matrix:二维矩阵
-     * @param lr:数
-     * @return 二维矩阵与数相乘的结果
+     * 二维矩阵与数相乘，二维矩阵中的每个元素与数相乘为对应位置元素值。
+     * @param matrix 二维矩阵。
+     * @param lr 数。
+     * @return 二维矩阵与数相乘的结果。
      */
     public static double[][] matrixMultiple(double[][] matrix,double lr){
         int matrixRow = matrix.length;
@@ -51,10 +56,10 @@ public class Matrix {
     }
     
     /**
-     * 两个一维矩阵按位相乘
-     * @param matrix1
-     * @param matrix2
-     * @return
+     * 两个一维矩阵按位相乘。
+     * @param matrix1 第一个一维矩阵。
+     * @param matrix2 第二个一维矩阵。
+     * @return 相乘之后的一维结果矩阵。
      * @throws MatrixException
      */
     public static double[] matrixMultiple(double[] matrix1, double[] matrix2)throws MatrixException{
@@ -69,10 +74,10 @@ public class Matrix {
     }
     
     /**
-     * 二维矩阵与一维矩阵相乘
-     * @param matrix1:二维矩阵
-     * @param matrix2:一维矩阵
-     * @return
+     * 二维矩阵与一维矩阵相乘。
+     * @param matrix1 二维矩阵(m*n)。
+     * @param matrix2 一维矩阵(n)，可以看成(n*1)的二维矩阵。
+     * @return 只有一列的二维矩阵(m*1)。
      * @throws MatrixException
      */
     public static double[][] matrixMultiple(double[][] matrix1, double[] matrix2)throws MatrixException{
@@ -90,6 +95,14 @@ public class Matrix {
         return result;
     }
     
+    /**
+     * 两个二维矩阵按位相乘，相乘的结果放在新矩阵的对应位置。
+     * @param matrix1 第一个二维矩阵(m*n)。
+     * @param matrix2 第二个二维矩阵(m*n)。
+     * @param flag 标识，传值为true/false/null都行，为区别矩阵相乘函数。
+     * @return 按位相乘后的二维结果矩阵(m*n)。
+     * @throws MatrixException
+     */
     public static double[][] matrixMultiple(double[][] matrix1, double[][] matrix2, boolean flag)throws MatrixException{
         int matrix1Row = matrix1.length;
         int matrix1Col = matrix1[0].length;
@@ -108,10 +121,11 @@ public class Matrix {
     }
     
     /**
-     * 两个二维矩阵相加减
-     * @param matrix1:第一个二维矩阵
-     * @param matrix2:第二个二维矩阵
-     * @return 两个二维矩阵相加减的结果
+     * 两个二维矩阵相加减，对应位置元素相加减。
+     * @param matrix1 第一个二维矩阵(m*n)。
+     * @param matrix2 第二个二维矩阵(m*n)。
+     * @param flag 传-1表示相减，其他值表示相加。
+     * @return 相加减的二维结果矩阵。
      * @throws MatrixException
      */
     public static double[][] matrixAdd(double[][] matrix1, double[][] matrix2, double flag)throws MatrixException{
@@ -134,10 +148,10 @@ public class Matrix {
     }
     
     /**
-     * 两个一维矩阵相减
-     * @param matrix1:第一个一维矩阵
-     * @param matrix2:第二个一维矩阵
-     * @return 两个一维矩阵相减的结果
+     * 两个一维矩阵相减，对应位置元素相减的结果放在新矩阵的对应位置。
+     * @param matrix1 第一个一维矩阵
+     * @param matrix2 第二个一维矩阵
+     * @return 两个一维矩阵相减的一维结果矩阵
      * @throws MatrixException
      */
     public static double[] matrixSub(double[] matrix1, double[] matrix2)throws MatrixException{
@@ -154,9 +168,9 @@ public class Matrix {
     }
     
     /**
-     * 二维矩阵转置
-     * @param matrix:需要被转置的二维矩阵
-     * @return 转置后的二维矩阵
+     * 二维矩阵转置，第i行变成第i列，第j列变成第j行。
+     * @param matrix 需要被转置的二维矩阵。
+     * @return 转置后的二维矩阵。
      */
     public static double[][] matrixTranspose(double[][] matrix){
         int matrixRow = matrix.length;
@@ -171,9 +185,9 @@ public class Matrix {
     }
     
     /**
-     * 求一维矩阵中元素的平方和
-     * @param matrix:一维矩阵
-     * @return 一维矩阵中所有元素的平方和
+     * 求一维矩阵中元素的平方和。
+     * @param matrix 一维矩阵。
+     * @return 一维矩阵中所有元素的平方和。
      */
     public static double quadraticSum(double[] matrix){
         double result = 0.0;
@@ -184,12 +198,12 @@ public class Matrix {
     }
     
     /**
-     * 将列数为1的二维矩阵转化成一维行矩阵
-     * @param matrix:二维矩阵
-     * @return 一维矩阵
+     * 将列数为1的二维矩阵转化成一维行矩阵。
+     * @param matrix 二维矩阵。
+     * @return 转化后的一维矩阵。
      * @throws MatrixException
      */
-    public static double[] change(double[][] matrix)throws MatrixException{
+    public static double[] change(double[][] matrix)throws MatrixException {
         if (matrix[0].length != 1){
             throw new MatrixException("该二维矩阵的列数不等于1，因此不能转换成一维矩阵！");
         }
@@ -201,9 +215,9 @@ public class Matrix {
     }
     
     /**
-     * 一维行矩阵转化成二维行矩阵
-     * @param matrix:一维行矩阵
-     * @return 二维行矩阵
+     * 一维行矩阵转化成只有一列二维矩阵。
+     * @param matrix 一维行矩阵
+     * @return 只有一列的二维矩阵。
      */
     public static double[][] change(double[] matrix){
         double[][] result = new double[matrix.length][1];

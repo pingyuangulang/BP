@@ -5,25 +5,63 @@ import com.Functions.Function;
 import com.Matrix.Matrix;
 
 /**
- * 3层网络结构
+ * 模拟BP神经网络，3层结构（输入层、隐含层和输出层）。
+ * @author JiBin
+ * @date 2018/6/9 2:05
  */
 public class MyBP {
+    
+    /**
+     * 训练时的实际输出。
+     */
     private double[] o;
-    private double[][] trainInput;//训练时的输入
-    private double[] output;//期望输出
-    private double[][] inputHiddenWeight;//输入层与隐含层之间的连接权值矩阵
-    private double[][] hiddenOutputWeight;//隐含层与输出层之间的连接权值矩阵
-    private double preErrorSum;//前一次的训练误差平方和
-    private double curErrorSum;//当前训练误差平方和
-    private double[] curOutError;//当前训练误差
-    private double lr;//学习速率
+    
+    /**
+     * 训练时的输入。
+     */
+    private double[][] trainInput;
+    
+    /**
+     * 期望输出。
+     */
+    private double[] output;
+    
+    /**
+     * 输入层与隐含层之间的连接权值矩阵。
+     */
+    private double[][] inputHiddenWeight;
+    
+    /**
+     * 隐含层与输出层之间的连接权值矩阵。
+     */
+    private double[][] hiddenOutputWeight;
+    
+    /**
+     * 前一次的训练误差平方和。
+     */
+    private double preErrorSum;
+    
+    /**
+     * 当前训练误差平方和。
+     */
+    private double curErrorSum;
+    
+    /**
+     * 当前训练误差。
+     */
+    private double[] curOutError;
+    
+    /**
+     * 学习速率。
+     */
+    private double lr;
     
     /**
      * 带参构造器，初始化网络
-     * @param trainInput
-     * @param output
-     * @param lr
-     * @param hidden
+     * @param trainInput 对网络进行训练学习时的输入。
+     * @param output 训练输入对应的输出。
+     * @param lr 学习速率。
+     * @param hidden 隐含层神经元节点的个数。
      */
     public MyBP(double[][] trainInput, double[] output, double lr, int hidden) {
         this.trainInput = trainInput;
@@ -39,7 +77,7 @@ public class MyBP {
     }
     
     /**
-     * 初始化两个权值矩阵
+     * 初始化两个权值矩阵（输入--隐含权值矩阵和隐含--输出权值矩阵）。
      */
     private void InitWeight(){
         //初始化输入层与隐含层之间的连接权值矩阵，取值范围（-0.5,0.5]
@@ -57,11 +95,11 @@ public class MyBP {
     }
     
     /**
-     * 计算当前训练的输出误差及误差平方和
-     * @param curOutput:当前训练得到的实际输出
+     * 计算当前训练的输出误差及误差平方和。
+     * @param curOutput 当前训练得到的训练输出。
      */
     private void calculateError(double[] curOutput){
-    
+        
         try {
             curOutError = Matrix.matrixSub(output,curOutput );
         } catch (MatrixException e) {
@@ -71,7 +109,7 @@ public class MyBP {
     }
     
     /**
-     * 根据上一次训练的误差平方和与当前训练的误差平方和的关系调整学习速率
+     * 根据上一次训练的误差平方和与当前训练的误差平方和的关系调整学习速率。
      */
     private void updateLr(){
         if (curErrorSum > 1.04 * preErrorSum){
@@ -87,7 +125,7 @@ public class MyBP {
     }
     
     /**
-     * 单次训练
+     * 单次训练，对神经网络只训练一次。
      * @throws MatrixException
      */
     public void train()throws MatrixException{
@@ -123,8 +161,8 @@ public class MyBP {
     }
     
     /**
-     * 训练num次
-     * @param num
+     * 多次训练，对神经网络训练所给的参数值次。
+     * @param num 训练的次数。
      */
     public void train(int num)throws MatrixException{
         for (int i=0;i<num;i++){
@@ -141,9 +179,9 @@ public class MyBP {
     }
     
     /**
-     * 给定一个输入，进行预测
-     * @param in
-     * @param out
+     * 神经网络训练学习完毕后，给定一个输入，对输出进行预测。
+     * @param in 输入层神经元的输入信息。
+     * @param out 该输入对应的期望输出。
      * @throws MatrixException
      */
     public void forecase(double[][] in, double[] out)throws MatrixException{
@@ -166,3 +204,4 @@ public class MyBP {
         }
     }
 }
+
