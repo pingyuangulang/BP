@@ -165,15 +165,16 @@ public class MyBP {
      * @param num 训练的次数。
      */
     public void train(int num)throws MatrixException{
-        for (int i=0;i<num;i++){
+        for (int i=1;i<=num;i++){
             train();
             if (i%100 == 0){
-                System.out.println("error:"+curErrorSum);
+                System.out.println("第"+i+"次训练error:"+curErrorSum);
                 System.out.println("实际输出：");
                 for (int j=0;j<o.length;j++){
-                    System.out.print(o[j]+"     ");
+                    System.out.print(o[j]+" ");
                 }
                 System.out.println();
+                System.out.println("------------------------------------------------------------");
             }
         }
     }
