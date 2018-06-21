@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0c9341bf-efcb-4c00-9aa2-45301a6813a5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Test/Test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,21 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/Test/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-              <folding>
-                <element signature="docComment;class#Test#0" />
-                <element signature="docComment;method#main#0;class#Test#0" />
-                <element signature="method#main#0;class#Test#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="MatrixException.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Exceptions/MatrixException.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -45,6 +32,64 @@
                 <element signature="method#MatrixException#1;class#MatrixException#0" />
                 <element signature="docComment;method#getMessage#0;class#MatrixException#0" />
                 <element signature="docComment;method#setMessage#0;class#MatrixException#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Function.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Functions/Function.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Matrix.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Matrix/Matrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="215" column="4" lean-forward="true" selection-start-line="215" selection-start-column="4" selection-end-line="215" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyBP.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Network/MyBP.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-18">
+              <caret line="195" column="50" lean-forward="true" selection-start-line="195" selection-start-column="50" selection-end-line="195" selection-end-column="50" />
+              <folding>
+                <element signature="docComment;class#MyBP#0" />
+                <element signature="docComment;field#o#0;class#MyBP#0" />
+                <element signature="docComment;field#output#0;class#MyBP#0" />
+                <element signature="docComment;field#inputHiddenWeight#0;class#MyBP#0" />
+                <element signature="docComment;field#hiddenOutputWeight#0;class#MyBP#0" />
+                <element signature="docComment;field#preErrorSum#0;class#MyBP#0" />
+                <element signature="docComment;field#curErrorSum#0;class#MyBP#0" />
+                <element signature="docComment;field#curOutError#0;class#MyBP#0" />
+                <element signature="docComment;field#lr#0;class#MyBP#0" />
+                <element signature="docComment;method#InitWeight#0;class#MyBP#0" />
+                <element signature="docComment;method#calculateError#0;class#MyBP#0" />
+                <element signature="docComment;method#updateLr#0;class#MyBP#0" />
+                <element signature="docComment;method#train#0;class#MyBP#0" />
+                <element signature="docComment;method#train#1;class#MyBP#0" />
+                <element signature="docComment;method#forecase#0;class#MyBP#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/Test/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+              <folding>
+                <element signature="docComment;class#Test#0" />
+                <element signature="docComment;method#main#0;class#Test#0" />
+                <element signature="method#main#0;class#Test#0" />
               </folding>
             </state>
           </provider>
@@ -109,7 +154,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,10 +161,63 @@
               <item name="BP" type="b2602c69:ProjectViewProjectNode" />
               <item name="BP" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="Functions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="Matrix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="Network" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BP" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="paper" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -137,6 +234,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\IDEAProjects\BP\src\paper" />
       <recent name="H:\IDEAProjects\BP\src\doc" />
     </key>
   </component>
@@ -319,6 +417,8 @@
       <workItem from="1528901607748" duration="56000" />
       <workItem from="1528901892324" duration="180000" />
       <workItem from="1528957344153" duration="645000" />
+      <workItem from="1529337266496" duration="1433000" />
+      <workItem from="1529457806581" duration="1063000" />
     </task>
     <task id="LOCAL-00001" summary="BP神经网络模拟成功">
       <created>1528474752024</created>
@@ -348,11 +448,18 @@
       <option name="project" value="LOCAL" />
       <updated>1528483692047</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="修改论文">
+      <created>1529352235994</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1529352235994</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60029000" />
+    <option name="totallyTimeSpent" value="62525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
@@ -367,8 +474,8 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3919355" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32903227" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3919355" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -378,8 +485,8 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.46283785" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.46283785" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -398,17 +505,55 @@
     <MESSAGE value="BP神经网络模拟成功" />
     <MESSAGE value="添加文档注释" />
     <MESSAGE value="src下的doc目录中的BP目录是该程序的帮助文档。" />
-    <option name="LAST_COMMIT_MESSAGE" value="src下的doc目录中的BP目录是该程序的帮助文档。" />
+    <MESSAGE value="修改论文" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改论文" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/Network/MyBP.java</url>
+          <line>102</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/Test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="docComment;class#Test#0" />
+            <element signature="docComment;method#main#0;class#Test#0" />
+            <element signature="method#main#0;class#Test#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Exceptions/MatrixException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+          <folding>
+            <element signature="docComment;class#MatrixException#0" />
+            <element signature="docComment;field#message#0;class#MatrixException#0" />
+            <element signature="docComment;method#MatrixException#0;class#MatrixException#0" />
+            <element signature="method#MatrixException#0;class#MatrixException#0" />
+            <element signature="docComment;method#MatrixException#1;class#MatrixException#0" />
+            <element signature="method#MatrixException#1;class#MatrixException#0" />
+            <element signature="docComment;method#getMessage#0;class#MatrixException#0" />
+            <element signature="docComment;method#setMessage#0;class#MatrixException#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -647,27 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Network/MyBP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="165" column="7" lean-forward="true" selection-start-line="165" selection-start-column="7" selection-end-line="165" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Matrix/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="215" column="4" lean-forward="true" selection-start-line="215" selection-start-column="4" selection-end-line="215" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Functions/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Exceptions/MatrixException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -681,6 +805,44 @@
             <element signature="method#MatrixException#1;class#MatrixException#0" />
             <element signature="docComment;method#getMessage#0;class#MatrixException#0" />
             <element signature="docComment;method#setMessage#0;class#MatrixException#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Functions/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Matrix/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="215" column="4" lean-forward="true" selection-start-line="215" selection-start-column="4" selection-end-line="215" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Network/MyBP.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="195" column="50" lean-forward="true" selection-start-line="195" selection-start-column="50" selection-end-line="195" selection-end-column="50" />
+          <folding>
+            <element signature="docComment;class#MyBP#0" />
+            <element signature="docComment;field#o#0;class#MyBP#0" />
+            <element signature="docComment;field#output#0;class#MyBP#0" />
+            <element signature="docComment;field#inputHiddenWeight#0;class#MyBP#0" />
+            <element signature="docComment;field#hiddenOutputWeight#0;class#MyBP#0" />
+            <element signature="docComment;field#preErrorSum#0;class#MyBP#0" />
+            <element signature="docComment;field#curErrorSum#0;class#MyBP#0" />
+            <element signature="docComment;field#curOutError#0;class#MyBP#0" />
+            <element signature="docComment;field#lr#0;class#MyBP#0" />
+            <element signature="docComment;method#InitWeight#0;class#MyBP#0" />
+            <element signature="docComment;method#calculateError#0;class#MyBP#0" />
+            <element signature="docComment;method#updateLr#0;class#MyBP#0" />
+            <element signature="docComment;method#train#0;class#MyBP#0" />
+            <element signature="docComment;method#train#1;class#MyBP#0" />
+            <element signature="docComment;method#forecase#0;class#MyBP#0" />
           </folding>
         </state>
       </provider>
